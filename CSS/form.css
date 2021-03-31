@@ -23,6 +23,7 @@ body{
     background-color: rgb(212, 144, 144);
     color: #000;
     font-family: "ELAND_Choice_M";
+    overflow: hidden;  /*질문 리스트들 넘치지 않게*/
 }
 
 #survey{
@@ -68,4 +69,32 @@ body{
 
 .answer input{
     cursor: pointer;
+}
+
+.btn_wrap{
+    display : flex;
+    justify-content: center;
+}
+
+.btn_sort{
+    justify-content: space-between;
+}
+
+
+button, .submit_btn{
+    width : 100px;
+    height: 40px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 10px;
+    font-family: ELAND_Choice_M;
+    font-size : 20px;
+    background-color:rgb(226, 208, 208);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+button:hover, .submit_btn:hover{
+    color: beige;
+    background-color: rgb(196, 104, 104);
 }
