@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(212, 144, 144);
+    color: #000;
+    font-family: "ELAND_Choice_M";
+}
+
+button{
+    font-family: "ELAND_Choice_M";
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight : bold;
+    background-color: #FFF ; /* !important 추가하면 가장 우선적용 */
+    color: #000;
+
+}
+
+button:hover{
+    text-decoration: underline;
+}
+#main_contents{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+#main_contents .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    padding-bottom: 50px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.result h1{
+    font-size: 50px;
+    font-family: 'ELAND_Choice_M';
+}
+
+.result h3{
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.result_img{
+    width: 300px;
+    height: 324px;
+}
+
+.result_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.result_explains{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    line-height: 1.5;
+}
+
+.result_explains .explain{
+    width: 400px;
+    margin-bottom: 30px;
+
+}
+
+.result_explains .title{
+    font-family: "Bazzi";
+    font-size: 20px;
+    text-align: center;
+    border-top: 3px solid #4b1c1b;
+    border-bottom : 3px solid #4b1c1b;
+    padding : 10px 0;
+    margin-bottom: 20px;
+}
+
+.result_explains ul{
+    padding: 0 20px;
+    list-style-type: disc;
+
+}
+
+.result_explains li{
+    padding-bottom: 15px;
+}
+
+.lectures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid  #4b1c1b;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.lectures .title{
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+    font-family: "Bazzi";
+    color :  #4b1c1b;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.lectures .title:before, .lectures .title:after{
+    content: '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background-color: #4b1c1b;
+    position: absolute;
+}
+
+.lectures .title:before{
+    left: 0;
+    top: 50%;
+}
+
+.lectures .title:after{
+    right: 0;
+    top: 50%;
+}
+
+.lectures p {
+    padding : 50px 0;
+    line-height: 1.5;
+}
+
+.lectures ul {
+    width : 400px;
+}
+
+.lectures li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.lectures a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.lectures a:hover img{
+    transform: scale(1.05);
+}
+
+.lectures a:hover button{
+    text-decoration: underline;    
+}
+
+.lectures li img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    transition: transform .5s;
+}
+
+.lectures li h3{
+    font-family: "Bazzi";
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px 20px;
+}
+
+.lectures li button{
+    background-color: #7f47dd;
+    color: #FFF;
+}
+
+.share {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #EA7E7C;
+
+}
+
+.share button{
+    margin-bottom: 30px;
+}
+
+.facebook_share{
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.kakao_share{
+    background-color: #f1d900;
+}
+
+.buttons {
+    padding-bottom: 50px;
+}
+
+.buttons h3{
+    padding-bottom: 20px;
+}
+
+.buttons button{
+    margin-bottom : 30px;
+}
+
+.color {
+    background-color: #7F47DD;
+    color: #FFF;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo a {
+    width: 100px;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.logo p {
+    padding-top: 20px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
